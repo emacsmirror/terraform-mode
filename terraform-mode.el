@@ -120,7 +120,7 @@
              (or (one-or-more space) "{"))))
 
 (defconst terraform--block-builtins-with-type-and-name
-  (rx (or "data" "resource")))
+  (rx (or "data" "resource" "ephemeral")))
 
 (defconst terraform--block-builtins-with-type-and-name--builtin-highlight-regexp
   (eval `(rx line-start
